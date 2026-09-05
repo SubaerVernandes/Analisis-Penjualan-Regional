@@ -478,22 +478,22 @@ Menyediakan tampilan interaktif untuk mengeksplorasi skenario dan performa yang 
 
 > Ganti path di bawah dengan nama file screenshot Power BI Anda.
 
-### Performance Summary
+### Ringkasan Kinerja
 
 <p align="center">
   <img src="Dasbor Gambar/Picture1.png" width="90%">
 </p>
 
-### Customer Segmentation
+### Segmentasi Pelanggan
 
 <p align="center">
   <img src="Dasbor Gambar/Picture2.png" width="90%">
 </p>
 
-### Revenue Scenario
+### Skenario Pendapatan
 
 <p align="center">
-  <img src="Dasbor Gambar/Picture1.png" width="90%">
+  <img src="Dasbor Gambar/Picture3.png" width="90%">
 </p>
 
 ---
