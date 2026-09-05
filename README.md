@@ -481,19 +481,19 @@ Menyediakan tampilan interaktif untuk mengeksplorasi skenario dan performa yang 
 ### Performance Summary
 
 <p align="center">
-  <img src="screenshots/dashboard-overview.png" width="90%">
+  <img src="Dasbor Gambar/Picture1.png" width="90%">
 </p>
 
 ### Customer Segmentation
 
 <p align="center">
-  <img src="screenshots/customer-segmentation.png" width="90%">
+  <img src="Dasbor Gambar/Picture2.png" width="90%">
 </p>
 
 ### Revenue Scenario
 
 <p align="center">
-  <img src="screenshots/revenue-scenario.png" width="90%">
+  <img src="Dasbor Gambar/Picture1.png" width="90%">
 </p>
 
 ---
