@@ -1,5 +1,4 @@
 # 📊 Regional Sales Analysis
-
 ### Mengubah Data Penjualan Menjadi Wawasan Bisnis yang Dapat Ditindaklanjuti
 
 <p align="center">
@@ -10,140 +9,89 @@
 </p>
 
 <p align="center">
-  <b>Proyek Data Analytics End-to-End</b><br>
+  <b>End-to-End Data Analytics Project</b><br>
   Python • Pandas • NumPy • Matplotlib • Seaborn • Power BI
 </p>
 
 ---
 
-## 📌 Ringkasan Proyek
+## 📌 Project Overview
 
-**Regional Sales Analysis** merupakan proyek **data analytics end-to-end** yang berfokus pada transformasi **data historis penjualan selama lima tahun** menjadi wawasan bisnis yang dapat ditindaklanjuti.
+**Regional Sales Analysis** merupakan proyek Data Analytics yang bertujuan untuk mengevaluasi kinerja penjualan dan profitabilitas bisnis berdasarkan data historis selama lima tahun.
 
-Proyek ini menganalisis kinerja penjualan berdasarkan beberapa dimensi utama:
+Analisis dilakukan dengan mengeksplorasi beberapa aspek utama, yaitu performa penjualan secara keseluruhan, produk, saluran penjualan, wilayah geografis, dan pelanggan.
 
-* 🌎 **Wilayah & Negara Bagian**
-* 📦 **Produk & SKU**
-* 🛒 **Saluran Penjualan**
-* 👥 **Pelanggan**
-* 📅 **Waktu & Musiman**
-* 💰 **Pendapatan & Profitabilitas**
+Proyek ini mencakup proses pengolahan data, Exploratory Data Analysis (EDA), hingga pengembangan dashboard interaktif menggunakan Power BI untuk menghasilkan insight dan rekomendasi bisnis berbasis data.
 
-Proses analisis dimulai dari **konsolidasi dan preprocessing data**, dilanjutkan dengan **Exploratory Data Analysis (EDA)**, kemudian menghasilkan **dashboard Power BI interaktif dan rekomendasi bisnis strategis**.
+**Project Objective:**
+Mengidentifikasi faktor-faktor yang berkontribusi terhadap pendapatan dan profitabilitas, menemukan peluang pertumbuhan, serta mendukung pengambilan keputusan bisnis melalui analisis data.
 
-> **Tujuan:** Mengidentifikasi peluang pertumbuhan, memahami faktor yang memengaruhi profitabilitas, serta memberikan rekomendasi berbasis data untuk mendukung keputusan penjualan dan operasional.
+## 🎯 Project Background
 
----
+Dalam persaingan bisnis, perusahaan perlu memahami faktor-faktor yang mendorong pendapatan dan profitabilitas untuk mempertahankan pertumbuhan bisnis. Perbedaan kontribusi produk, saluran penjualan, wilayah, dan pelanggan dapat memengaruhi efektivitas strategi penjualan.
 
-# 🎯 Permasalahan Bisnis
+Melalui proyek ini, dilakukan analisis terhadap data penjualan untuk mengidentifikasi tren pendapatan, mengevaluasi profitabilitas, serta mengetahui kontribusi produk, saluran penjualan, wilayah, dan pelanggan. Hasil analisis divisualisasikan melalui Power BI untuk menghasilkan *actionable insights* dan rekomendasi guna mengoptimalkan strategi penjualan serta mendukung pengambilan keputusan bisnis.
 
-Tim penjualan memiliki keterbatasan visibilitas terhadap kinerja regional dan komersial, sehingga sulit untuk mengidentifikasi:
+## 🚨 Business Problem
 
-* Wilayah dengan kinerja tinggi dan rendah
-* Fluktuasi pendapatan berdasarkan musim
-* Produk dan SKU dengan performa terbaik
-* Kontribusi masing-masing saluran penjualan
-* Konsentrasi pendapatan berdasarkan pelanggan
-* Faktor yang memengaruhi profitabilitas
-* Peluang untuk meningkatkan pendapatan dan margin keuntungan
+Perusahaan membutuhkan pemahaman yang lebih menyeluruh mengenai kinerja penjualan untuk menentukan strategi bisnis yang tepat. Namun, tanpa analisis berdasarkan produk, channel, wilayah, dan pelanggan, perusahaan dapat mengalami kesulitan dalam:
 
-### Tujuan Bisnis
+- Mengidentifikasi tren dan perubahan pendapatan dari waktu ke waktu.
+- Mengetahui produk yang memberikan kontribusi revenue dan profitabilitas terbaik.
+- Mengevaluasi efektivitas masing-masing sales channel.
+- Menentukan wilayah dengan kontribusi penjualan tertinggi maupun terendah.
+- Mengidentifikasi pelanggan dengan kontribusi revenue dan profit margin yang menarik.
+- Menemukan peluang untuk meningkatkan pendapatan dan profitabilitas.
 
-Mengembangkan solusi analitik berbasis data yang dapat menjawab pertanyaan:
+**Business Objective:**
 
-> **Apa yang mendorong kinerja penjualan, di mana peluang terbesar berada, dan tindakan apa yang seharusnya menjadi prioritas bisnis?**
+Bagaimana perusahaan dapat mengoptimalkan strategi penjualan dengan memahami kontribusi produk, channel, wilayah, dan pelanggan agar pertumbuhan revenue serta profitabilitas dapat ditingkatkan?
 
----
+## 🔍 Key Business Questions
 
-# 🔍 Pertanyaan Bisnis
+Analisis ini dirancang untuk menjawab beberapa pertanyaan bisnis berikut:
 
-Analisis dirancang untuk menjawab beberapa pertanyaan bisnis berikut:
+| No. | Key Business Questions |
+|---|---|
+| 01 | Bagaimana kinerja penjualan perusahaan berdasarkan total Revenue, Profit, Profit Margin, dan Orders? |
+| 02 | Bagaimana tren pendapatan berubah dari waktu ke waktu dan apakah terdapat pola musiman? |
+| 03 | Produk mana yang memberikan kontribusi Revenue terbesar dan produk mana yang memiliki Profit Margin tertinggi? |
+| 04 | Sales channel mana yang memberikan kontribusi Revenue dan Profit terbesar? |
+| 05 | Wilayah dan negara bagian mana yang memiliki kontribusi penjualan tertinggi? |
+| 06 | Bagaimana perbedaan kinerja penjualan dan profitabilitas antarwilayah? |
+| 07 | Siapa pelanggan dengan kontribusi Revenue terbesar dan bagaimana perbandingan profitabilitas antar pelanggan? |
+| 08 | Strategi apa yang dapat diterapkan untuk mengoptimalkan penjualan dan meningkatkan profitabilitas? |
 
-| #  | Pertanyaan Bisnis                                                      |
-| -- | ---------------------------------------------------------------------- |
-| 01 | Negara bagian dan wilayah mana yang menghasilkan pendapatan tertinggi? |
-| 02 | Bagaimana perubahan pendapatan dari waktu ke waktu?                    |
-| 03 | Apakah terdapat pola musiman yang signifikan?                          |
-| 04 | Produk mana yang memberikan kontribusi pendapatan terbesar?            |
-| 05 | Produk mana yang menghasilkan margin keuntungan terbaik?               |
-| 06 | Saluran penjualan mana yang memberikan kontribusi pendapatan terbesar? |
-| 07 | Pelanggan mana yang menghasilkan pendapatan tertinggi?                 |
-| 08 | Apakah pendapatan terkonsentrasi pada sejumlah kecil pelanggan?        |
-| 09 | Faktor apa yang memiliki hubungan paling kuat dengan profit?           |
-| 10 | Strategi apa yang dapat meningkatkan penjualan dan profitabilitas?     |
-
----
-
-# 🧠 Pendekatan Analisis
-
-Proyek ini mengikuti alur **data analytics end-to-end** yang terstruktur:
-
-```text
-                 PERMASALAHAN BISNIS
-                       │
-                       ▼
-                 PENGUMPULAN DATA
-                       │
-                       ▼
-              KONSOLIDASI DATA
-                       │
-                       ▼
-          PEMBERSIHAN & PERSIAPAN DATA
-                       │
-                       ▼
-              FEATURE ENGINEERING
-                       │
-                       ▼
-       EXPLORATORY DATA ANALYSIS (EDA)
-                       │
-                       ▼
-                WAWASAN BISNIS
-                       │
-                       ▼
-              POWER BI DASHBOARD
-                       │
-                       ▼
-           REKOMENDASI BISNIS
-```
-
-Alur ini memastikan bahwa dashboard akhir bukan hanya sekadar kumpulan visualisasi, tetapi merupakan hasil dari proses analisis yang terstruktur.
-
----
-
-# 🛠️ Teknologi yang Digunakan
+## 🛠️ Technology & Tools
 
 ### Programming & Data Analysis
 
-| Teknologi     | Penggunaan                      |
-| ------------- | ------------------------------- |
-| 🐍 Python     | Analisis dan preprocessing data |
-| 🐼 Pandas     | Manipulasi data                 |
-| 🔢 NumPy      | Perhitungan numerik             |
-| 📊 Matplotlib | Visualisasi data                |
-| 📈 Seaborn    | Visualisasi statistik           |
+| Technology | Usage |
+|---|---|
+| Python | Data analysis dan preprocessing |
+| Pandas | Data manipulation |
+| NumPy | Numerical computation |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
 
 ### Business Intelligence
 
-| Teknologi           | Penggunaan                    |
-| ------------------- | ----------------------------- |
-| 🟨 Power BI         | Dashboard interaktif          |
-| 🔄 Power Query      | Transformasi data             |
-| 📊 Power BI Visuals | Reporting & data storytelling |
+| Technology | Usage |
+|---|---|
+| Power BI | Interactive dashboard development |
+| Power Query | Data transformation |
+| Power BI Visuals | Reporting dan data storytelling |
 
-### Tools Pendukung
+### Supporting Tools
 
-```text
-Google Colab
-Microsoft Excel
-PowerPoint
-GitHub
-```
+- Google Colab
+- Microsoft Excel
+- PowerPoint
+- GitHub
 
----
+## 📂 Dataset Overview
 
-# 📂 Struktur Dataset
-
-Data mentah terdiri dari beberapa tabel yang mencakup:
+Dataset terdiri dari beberapa tabel yang digunakan untuk mendukung analisis penjualan.
 
 ```text
 Sales
@@ -156,454 +104,352 @@ Sales
 └── Budget
 ```
 
-Dataset akhir kemudian disusun berdasarkan beberapa dimensi analisis.
+Informasi yang digunakan dalam analisis meliputi:
 
-### Informasi Order & Pelanggan
+**1. Order & Customer Information**
+- Order Number
+- Order Date
+- Customer Name
+- Channel
+- Product Name
 
-```text
-order_number
-order_date
-customer_name
-channel
-product_name
-```
+**2. Financial Information**
+- Quantity
+- Unit Price
+- Revenue
+- Cost
+- Profit
+- Profit Margin %
 
-### Informasi Keuangan
+**3. Time Information**
+- Order Month
+- Order Month Number
+- Order Month Name
 
-```text
-quantity
-unit_price
-revenue
-cost
-profit
-profit_margin_pct
-```
+**4. Geographic Information**
+- State
+- State Name
+- US Region
+- Latitude
+- Longitude
 
-### Informasi Waktu
+**5. Planning Information**
+- Budget 2017
 
-```text
-order_month
-order_month_num
-order_month_name
-```
+## ⚙️ Data Preparation & Cleaning
 
-### Informasi Geografis
+Tahap Data Preparation dilakukan untuk memastikan data memiliki struktur yang konsisten dan siap digunakan dalam proses analisis.
 
-```text
-state
-state_name
-us_region
-lat
-lon
-```
+Proses yang dilakukan meliputi:
 
-### Perencanaan
+- Restrukturisasi header.
+- Konsolidasi dan penggabungan tabel.
+- Menghapus kolom redundan.
+- Standardisasi nama kolom.
+- Penyesuaian tipe data.
+- Pemilihan kolom kunci.
+- Validasi data.
 
-```text
-budget_2017
-```
+**Feature Engineering**
 
----
-
-# 🧹 Persiapan & Pembersihan Data
-
-Tahap preprocessing dilakukan untuk menghasilkan dataset yang siap digunakan dalam analisis.
-
-### Proses yang Dilakukan
-
-* Restrukturisasi header
-* Konsolidasi data
-* Penggabungan tabel
-* Menghapus kolom redundan
-* Standardisasi nama kolom
-* Mengubah nama kolom
-* Penyesuaian tipe data
-* Pemilihan kolom kunci
-* Validasi data
-
-### Feature Engineering
-
-Beberapa metrik bisnis penting dibuat selama proses analisis:
+Membuat metrik bisnis yang diperlukan untuk analisis, antara lain:
 
 ```text
 Profit
 Profit Margin %
 ```
 
-Selain itu, fitur kalender juga dibuat untuk mendukung analisis time-series.
+Selain itu, dilakukan pembuatan fitur kalender untuk mendukung analisis tren penjualan berdasarkan waktu.
 
-Berdasarkan dokumentasi proyek, **tidak ditemukan missing values maupun baris duplikat setelah proses preprocessing**.
+Berdasarkan dokumentasi preprocessing proyek, tidak ditemukan missing values maupun baris duplikat setelah proses pembersihan data.
 
----
+## 📊 Exploratory Data Analysis (EDA)
 
-# 📊 Exploratory Data Analysis
-
-Tahap EDA berfokus pada pemahaman:
-
-```text
-WHAT  → Apa yang sedang terjadi?
-WHERE → Di mana hal tersebut terjadi?
-WHY   → Apa yang mungkin menjadi penyebabnya?
-```
+Exploratory Data Analysis dilakukan untuk memahami karakteristik data dan menemukan pola yang relevan dengan permasalahan bisnis.
 
 Analisis mencakup:
 
-* Tren penjualan
-* Performa produk
-* Profitabilitas
-* Saluran penjualan
-* Performa geografis
-* Konsentrasi pelanggan
-* Distribusi AOV
-* Segmentasi pelanggan
-* Korelasi antar fitur
+- Sales Trend Analysis
+- Product Performance Analysis
+- Channel Performance Analysis
+- Regional Performance Analysis
+- Customer Analysis
+- Profitability Analysis
+- Seasonal Analysis
+- Correlation Analysis
 
----
+Tahap ini berfokus pada pemahaman terhadap apa yang terjadi dalam data, di mana performa tersebut terbentuk, serta faktor-faktor yang berpotensi memengaruhi hasil bisnis.
 
-# 📈 Temuan Utama
+## 🧠 Key Insights & Business Implications
 
-## 01 — Pola Musiman yang Kuat
+Berdasarkan hasil analisis dan visualisasi pada ketiga dashboard, diperoleh beberapa temuan utama berikut.
 
-Penjualan bulanan menunjukkan pola yang relatif konsisten.
+### 01. Overall Sales Performance
 
-### Temuan Utama
+<text>**Key Insight:**</text>
 
-* **Mei–Juni:** periode puncak penjualan
-* **Januari:** titik terendah tahunan
-* **Awal 2017:** terjadi penurunan pendapatan yang cukup signifikan
+Kinerja penjualan secara keseluruhan menunjukkan:
 
-Temuan ini menunjukkan bahwa perencanaan penjualan dan operasional perlu mempertimbangkan pola musiman yang berulang.
+| KPI | Performance |
+|---|---:|
+| Total Revenue | $1.2 Billion |
+| Total Profit | $461.8 Million |
+| Profit Margin | 37.36% |
+| Total Orders | 64K |
 
----
+Tren pendapatan menunjukkan performa yang lebih tinggi pada bulan Mei dan Agustus, sedangkan Februari menjadi salah satu periode dengan pendapatan yang lebih rendah.
 
-## 02 — Konsentrasi Produk
+**Business Implication:**
 
-Produk **26 dan 25** muncul sebagai produk dengan kontribusi pendapatan terbesar.
+Perusahaan perlu memperhatikan perubahan performa penjualan berdasarkan waktu untuk mengidentifikasi periode potensial dan periode yang membutuhkan strategi peningkatan penjualan.
 
-Secara gabungan, kedua produk tersebut menyumbang sekitar:
+### 02. Product Performance
 
-> **~25% dari total penjualan**
+**Key Insight:**
 
-Hal ini menciptakan dua sisi:
+- Product 26 menghasilkan Revenue tertinggi sekitar $117M.
+- Product 25 berada di posisi berikutnya dengan Revenue sekitar $109M.
+- Product 13 menghasilkan Revenue sekitar $78M.
+- Product 9 memiliki Profit Margin tertinggi sebesar 40.0%.
 
-**Peluang** → Memprioritaskan produk dengan performa tinggi.
+**Business Implication:**
 
-**Risiko** → Ketergantungan yang terlalu besar pada sejumlah SKU tertentu.
+Produk dengan Revenue tinggi berperan penting dalam menghasilkan pendapatan, sedangkan produk dengan Profit Margin tinggi menunjukkan potensi profitabilitas yang menarik. Keduanya perlu dievaluasi menggunakan strategi yang berbeda.
 
----
+### 03. Sales Channel Performance
 
-## 03 — Wholesale Menjadi Mesin Utama Pendapatan
+**Key Insight:**
 
-Kontribusi pendapatan berdasarkan channel:
+Kontribusi Revenue berdasarkan sales channel:
 
-| Channel        | Kontribusi |
-| -------------- | ---------: |
-| 🥇 Wholesale   |  **54,1%** |
-| 🥈 Distributor |  **31,3%** |
-| 🥉 Export      |  **14,6%** |
+| Sales Channel | Revenue | Contribution |
+|---|---:|---:|
+| Wholesale | $668.2M | 54.06% |
+| Distributor | $387.14M | 31.32% |
+| Export | $180.63M | 14.61% |
 
-Wholesale menjadi kontributor pendapatan terbesar, sementara Export memberikan peluang untuk mengeksplorasi pertumbuhan dengan margin yang lebih tinggi.
+Export memiliki Profit Margin tertinggi sebesar 38.01%, sementara Wholesale menjadi kontributor Revenue terbesar.
 
----
+**Business Implication:**
 
-## 04 — California Memimpin Pasar
+Wholesale merupakan channel utama dalam menghasilkan pendapatan. Di sisi lain, Export memiliki potensi untuk dikembangkan karena menunjukkan margin yang lebih tinggi.
 
-California menjadi negara bagian dengan performa terkuat berdasarkan pendapatan dan jumlah order.
+### 04. Geographic Performance
 
-### Performa
+**Key Insight:**
 
-```text
-Revenue     ≈ $230M
-Orders      ≈ 7,6K
-```
+Kontribusi Revenue berdasarkan wilayah:
 
-Negara bagian lain yang juga menunjukkan kontribusi signifikan:
+| Region | Revenue | Contribution |
+|---|---:|---:|
+| West | $372.1M | 30.1% |
+| South | $335.1M | 27.1% |
+| Midwest | $320.3M | 25.9% |
+| Northeast | $208.4M | 16.9% |
 
-* Texas
-* Florida
-* Illinois
+West menjadi wilayah dengan kontribusi Revenue tertinggi. Pada tingkat negara bagian, California menghasilkan Revenue terbesar sekitar $228.79M.
 
----
+**Business Implication:**
 
-## 05 — Wilayah West Memimpin Penjualan
+Wilayah West dan California merupakan pasar dengan kontribusi penjualan yang kuat. Sementara itu, Northeast dapat menjadi fokus evaluasi untuk menemukan peluang peningkatan performa regional.
 
-Performa berdasarkan wilayah:
+### 05. Customer Performance
 
-| Wilayah    | Performa          |
-| ---------- | ----------------- |
-| 🥇 West    | Tertinggi         |
-| 🥈 South   | Kontributor utama |
-| 🥉 Midwest | Stabil            |
-| Northeast  | Terendah          |
+**Key Insight:**
 
-Wilayah **West** menunjukkan performa pasar yang kuat, sedangkan Northeast dapat menjadi peluang untuk dilakukan investigasi pasar lebih lanjut.
+- Aibox Company menjadi salah satu pelanggan dengan kontribusi Revenue tertinggi, sekitar $13M.
+- State Ltd menghasilkan Revenue sekitar $12M.
+- Neutrogena Ltd memiliki Profit Margin tertinggi sebesar 44.78%.
+- Avamba Company memiliki Profit Margin sebesar 44.20%.
 
----
+Temuan ini menunjukkan bahwa pelanggan dengan Revenue tertinggi tidak selalu memiliki Profit Margin tertinggi.
 
-## 06 — Konsentrasi Pendapatan Pelanggan
+**Business Implication:**
 
-Analisis pelanggan menunjukkan perbedaan yang signifikan antara pelanggan dengan performa tertinggi dan terendah.
+Evaluasi pelanggan tidak cukup hanya berdasarkan besarnya Revenue. Perusahaan juga perlu mempertimbangkan Profit Margin untuk mengetahui pelanggan yang memberikan kontribusi keuntungan lebih baik.
 
-**Aibox Company** menjadi pelanggan dengan kontribusi pendapatan terbesar.
+## 💡 Business Recommendations
 
-Hal ini menunjukkan pentingnya:
+Berdasarkan Key Insights dan Business Implications, berikut rekomendasi yang dapat dipertimbangkan perusahaan.
 
-* Customer retention
-* Key-account management
-* Upselling
-* Cross-selling
-* Diversifikasi pendapatan
+### 01. Optimize Product Performance
 
----
+Mempertahankan dan mengoptimalkan produk dengan kontribusi Revenue tinggi seperti Product 26 dan Product 25. Selain itu, mengevaluasi produk dengan Profit Margin tinggi untuk mengidentifikasi peluang peningkatan keuntungan.
 
-## 07 — Pricing Merupakan Faktor Penting dalam Profitabilitas
+### 02. Improve Sales Channel Strategy
 
-Analisis korelasi menunjukkan hubungan yang kuat antara **unit price** dan metrik keuangan.
+Mempertahankan Wholesale sebagai channel utama penghasil Revenue serta mengeksplorasi peluang pengembangan Export karena memiliki Profit Margin tertinggi.
 
-| Hubungan             | Korelasi |
-| -------------------- | -------: |
-| Unit Price ↔ Cost    | **0,94** |
-| Unit Price ↔ Revenue | **0,91** |
-| Revenue ↔ Profit     | **0,87** |
-| Unit Price ↔ Profit  | **0,79** |
-| Cost ↔ Profit        | **0,58** |
+### 03. Strengthen Regional Market Strategy
 
-Quantity menunjukkan hubungan yang relatif lebih lemah dengan metrik keuangan.
+Mempertahankan performa pasar di wilayah West dan menjadikan California sebagai salah satu benchmark. Perusahaan juga dapat mengevaluasi wilayah dengan kontribusi lebih rendah untuk menemukan peluang pertumbuhan.
 
-### Interpretasi Bisnis
+### 04. Develop Customer Value Strategy
 
-Temuan ini menunjukkan bahwa **pengelolaan harga dan biaya berpotensi menjadi tuas yang lebih kuat untuk meningkatkan profitabilitas dibandingkan hanya meningkatkan volume penjualan**.
+Melakukan evaluasi pelanggan berdasarkan Revenue dan Profit Margin, kemudian memprioritaskan:
 
----
+- Customer Retention
+- Customer Relationship Management
+- Upselling
+- Cross-selling
 
-# 💡 Insight Strategis
+### 05. Improve Sales Planning
 
-Hasil analisis dapat dirangkum menjadi lima fokus utama:
+Menggunakan tren pendapatan bulanan sebagai dasar perencanaan penjualan, persediaan, dan campaign. Perusahaan dapat memperkuat strategi pada periode dengan performa lebih rendah serta mempersiapkan kebutuhan sebelum periode puncak.
 
-```text
-SEASONALITY
-    ↓
-Rencanakan inventory & campaign berdasarkan pola permintaan
+### 06. Monitor Profitability
 
-PRODUCT
-    ↓
-Pertahankan SKU unggulan & optimalkan produk dengan performa rendah
+Melakukan pemantauan Revenue, Profit, dan Profit Margin secara berkala untuk mengevaluasi kinerja produk, channel, wilayah, dan pelanggan. Hal ini membantu perusahaan menjaga keseimbangan antara pertumbuhan pendapatan dan keuntungan.
 
-CHANNEL
-    ↓
-Pertahankan skala Wholesale & kembangkan Export
+## 📈 Power BI Dashboard
 
-REGION
-    ↓
-Replikasi strategi dari wilayah dengan performa tinggi
+Hasil analisis divisualisasikan ke dalam tiga dashboard interaktif menggunakan Power BI. Setiap dashboard memiliki fokus analisis yang berbeda, tetapi saling melengkapi untuk memberikan gambaran menyeluruh mengenai kinerja penjualan.
 
-CUSTOMER
-    ↓
-Prioritaskan pelanggan dengan revenue & margin tinggi
-```
+### 01. Overall Sales Performance
 
----
+Dashboard ini memberikan gambaran umum mengenai kinerja penjualan perusahaan.
 
-# 🚀 Rekomendasi Bisnis
+Informasi yang ditampilkan:
+- Total Revenue
+- Total Profit
+- Profit Margin
+- Total Orders
+- Monthly Sales Trend
 
-## 01. Strategi Penjualan Musiman
+### 02. Product & Sales Channel Performance
 
-Meluncurkan campaign yang lebih terarah pada periode dengan performa rendah serta memperkuat persiapan sebelum periode puncak penjualan.
+Dashboard ini berfokus pada evaluasi performa produk dan sales channel.
 
-## 02. Optimasi SKU
+Informasi yang ditampilkan:
+- Product Revenue
+- Product Profitability
+- Product Profit Margin
+- Revenue by Sales Channel
+- Profit by Sales Channel
+- Channel Profit Margin
 
-Memprioritaskan Produk 26 dan 25 sekaligus mengevaluasi SKU dengan performa rendah berdasarkan demand dan profitabilitas.
+### 03. Geographic & Customer Performance
 
-## 03. Ekspansi Channel
+Dashboard ini memberikan informasi mengenai kontribusi penjualan berdasarkan wilayah dan pelanggan.
 
-Mempertahankan Wholesale sebagai mesin utama pendapatan sekaligus mengembangkan peluang Export pada area dengan margin yang menarik.
+Informasi yang ditampilkan:
+- Revenue by Region
+- Revenue by State
+- Regional Profit Margin
+- Customer Revenue
+- Customer Profit Margin
+- Customer Performance Comparison
 
-## 04. Pertumbuhan Regional
+## 🖼️ Dashboard Preview
 
-Menggunakan California dan wilayah West sebagai benchmark untuk mengidentifikasi strategi yang dapat diterapkan pada wilayah dengan performa lebih rendah.
-
-## 05. Customer Value Management
-
-Melakukan segmentasi pelanggan berdasarkan:
-
-```text
-Revenue
-+
-Profit Margin
-```
-
-Kemudian memprioritaskan strategi:
-
-* Retention
-* Upselling
-* Cross-selling
-* Pricing optimization
-
-## 06. Monitoring Margin
-
-Memantau akun dengan margin rendah serta menganalisis faktor biaya dan harga yang menyebabkan penurunan profitabilitas.
-
----
-
-# 📊 Power BI Dashboard
-
-Hasil analisis kemudian diterjemahkan menjadi **dashboard Power BI interaktif** yang terdiri dari tiga halaman utama.
-
-### 01 — Performance Summary
-
-Menampilkan:
-
-* Performa pendapatan
-* Tren penjualan
-* Performa produk
-* Performa channel
-* Performa regional
-
-### 02 — Customer Segmentation
-
-Berfokus pada:
-
-* Pendapatan pelanggan
-* Profitabilitas pelanggan
-* Ranking pelanggan
-* Revenue vs. Margin
-
-### 03 — Revenue Scenario
-
-Menyediakan tampilan interaktif untuk mengeksplorasi skenario dan performa yang berkaitan dengan pendapatan.
-
----
-
-# 🖼️ Dashboard Preview
-
-> Ganti path di bawah dengan nama file screenshot Power BI Anda.
-
-### Ringkasan Kinerja
+### 01. Overall Sales Performance
 
 <p align="center">
-  <img src="Dasbor Gambar/Picture1.png" width="90%">
+  <img src="screenshots/dashboard-overview.png" width="95%">
 </p>
 
-### Segmentasi Pelanggan
+### 02. Product & Sales Channel Performance
 
 <p align="center">
-  <img src="Dasbor Gambar/Picture2.png" width="90%">
+  <img src="screenshots/product-channel-performance.png" width="95%">
 </p>
 
-### Skenario Pendapatan
+### 03. Geographic & Customer Performance
 
 <p align="center">
-  <img src="Dasbor Gambar/Picture3.png" width="90%">
+  <img src="screenshots/geographic-customer-performance.png" width="95%">
 </p>
 
----
+> Sesuaikan nama file gambar dengan nama screenshot yang digunakan di repository GitHub Anda.
 
-# 📁 Struktur Repository
+## 📁 Repository Structure
 
 ```text
 Regional-Sales-Analysis/
 │
-├── 📄 README.md
+├── README.md
 │
-├── 📂 data/
+├── data/
 │   └── README.md
 │
-├── 📂 notebooks/
+├── notebooks/
 │   └── Regional_Sales_Analysis.ipynb
 │
-├── 📂 powerbi/
+├── powerbi/
 │   └── Regional_Sales_Analysis.pbix
 │
-├── 📂 screenshots/
+├── screenshots/
 │   ├── dashboard-overview.png
-│   ├── customer-segmentation.png
-│   └── revenue-scenario.png
+│   ├── product-channel-performance.png
+│   └── geographic-customer-performance.png
 │
-└── 📂 presentation/
+└── presentation/
     └── Regional_Sales_Analysis.pptx
 ```
 
----
+## 🎯 Skills & Competencies
 
-# 🎯 Kompetensi yang Ditunjukkan
+**Data Analytics**
+- Exploratory Data Analysis (EDA)
+- Trend Analysis
+- Product Analysis
+- Sales Channel Analysis
+- Regional Analysis
+- Customer Analysis
+- Profitability Analysis
+- Correlation Analysis
 
-### Data Analytics
+**Data Preparation**
+- Data Cleaning
+- Data Transformation
+- Data Integration
+- Feature Engineering
+- Data Validation
+
+**Business Intelligence**
+- Power BI Dashboard Development
+- KPI Monitoring
+- Interactive Data Visualization
+- Business Storytelling
+- Dashboard Design
+
+**Business & Analytical Thinking**
+- Problem Solving
+- Business Question Formulation
+- Insight Generation
+- Business Recommendations
+- Data-Driven Decision Making
+
+## 🏆 Project Value
+
+Proyek ini menunjukkan proses analisis data secara end-to-end, mulai dari pengolahan data mentah hingga menghasilkan rekomendasi bisnis yang dapat digunakan sebagai bahan pertimbangan pengambilan keputusan.
+
+Melalui tiga dashboard Power BI, stakeholder dapat mengevaluasi kinerja penjualan dari berbagai perspektif, mengidentifikasi area dengan kontribusi terbaik, serta menemukan peluang untuk mengoptimalkan strategi penjualan dan profitabilitas.
+
+**End-to-End Workflow:**
 
 ```text
-✓ Exploratory Data Analysis
-✓ Trend Analysis
-✓ Product Analysis
-✓ Customer Analysis
-✓ Regional Analysis
-✓ Profitability Analysis
-✓ Correlation Analysis
+Raw Data
+   ↓
+Data Cleaning & Preparation
+   ↓
+Exploratory Data Analysis
+   ↓
+Key Business Insights
+   ↓
+Power BI Dashboard
+   ↓
+Business Recommendations
 ```
 
-### Data Preparation
-
-```text
-✓ Data Cleaning
-✓ Data Transformation
-✓ Data Integration
-✓ Feature Engineering
-✓ Data Validation
-```
-
-### Business Intelligence
-
-```text
-✓ Power BI Dashboard Development
-✓ KPI Analysis
-✓ Interactive Data Visualization
-✓ Business Storytelling
-✓ Dashboard Design
-```
-
-### Business & Analytical Thinking
-
-```text
-✓ Problem Solving
-✓ Perumusan Business Question
-✓ Insight Generation
-✓ Strategic Recommendation
-✓ Data-Driven Decision Making
-```
-
----
-
-# 🏆 Dampak Proyek
-
-Proyek ini menunjukkan kemampuan untuk bergerak lebih jauh dari sekadar:
-
-> **"Apa yang dikatakan oleh data?"**
-
-menjadi:
-
-> **"Apa yang harus dilakukan bisnis berdasarkan data tersebut?"**
-
-Workflow analisis akhir menghubungkan:
-
-**Raw Data → Clean Data → EDA → Insights → Dashboard → Business Recommendations**
-
-Pendekatan ini memungkinkan stakeholder untuk mengeksplorasi performa penjualan secara mandiri dan menggunakan hasil analisis untuk mendukung:
-
-* Sales planning
-* Customer strategy
-* Product optimization
-* Regional expansion
-* Profitability management
-
----
-
-# 👨‍💻 Tentang Saya
+## 👨‍💻 About Me
 
 ### Faris Fatur Rohman
+**Mathematics Graduate | Aspiring Data Analyst**
 
-**Lulusan Matematika | Aspiring Data Analyst**
+Saya merupakan lulusan Matematika dengan ketertarikan pada Data Analytics dan Data Science, khususnya dalam mengolah data menjadi insight yang dapat mendukung pengambilan keputusan bisnis.
 
-Saya merupakan lulusan Matematika dengan ketertarikan kuat pada **Data Analytics dan Data Science**, khususnya dalam mengubah data mentah menjadi insight yang dapat mendukung pengambilan keputusan bisnis.
-
-### Kompetensi Utama
+**Core Skills**
 
 ```text
 Python
@@ -613,38 +459,28 @@ Power BI
 Pandas
 NumPy
 Data Cleaning
-EDA
+Exploratory Data Analysis
 Data Visualization
 Business Intelligence
 ```
 
-Saya tertarik pada peluang yang memungkinkan saya menggabungkan **kemampuan berpikir matematis, analytical skills, dan business understanding** untuk menyelesaikan permasalahan nyata menggunakan data.
+Saya tertarik untuk mengembangkan kemampuan analytical thinking dan business understanding melalui penyelesaian permasalahan nyata menggunakan data.
 
----
+## 💼 Career Interests
 
-# 💼 Minat Karier
+Saya terbuka terhadap peluang karier di bidang:
 
-Saya terbuka terhadap peluang pada bidang:
+- Data Analyst
+- Junior Data Analyst
+- Business Intelligence Analyst
+- BI Developer
+- Data Science
+- Analytics Internship
 
-* Data Analyst
-* Junior Data Analyst
-* Business Intelligence Analyst
-* BI Developer
-* Data Science
-* Analytics Internship
+## ⭐ Let's Connect
 
----
-
-# ⭐ Let's Connect
-
-Jika Anda merupakan recruiter, hiring manager, atau profesional data yang tertarik untuk berdiskusi mengenai proyek ini, jangan ragu untuk terhubung.
-
-**Saya terbuka untuk terus belajar, berkolaborasi, dan menyelesaikan permasalahan menarik menggunakan data.**
-
----
+Saya terbuka untuk berdiskusi, belajar, dan berkolaborasi dengan recruiter, hiring manager, maupun profesional di bidang Data Analytics.
 
 ## 📌 Disclaimer
 
-Proyek ini dibuat untuk **keperluan portfolio dan edukasi**.
-
-Tujuan utama proyek adalah menunjukkan kemampuan dalam menjalankan proses **Data Analytics end-to-end**, mulai dari persiapan data, exploratory analysis, menghasilkan business insights, membangun dashboard, hingga menyusun strategic recommendations.
+Proyek ini dibuat untuk keperluan portfolio dan edukasi dengan tujuan menunjukkan penerapan proses Data Analytics end-to-end, mulai dari data preparation, Exploratory Data Analysis, dashboard development, hingga penyusunan business insights dan recommendations.
