@@ -345,19 +345,19 @@ Informasi yang ditampilkan:
 ### 01. Overall Sales Performance
 
 <p align="center">
-  <img src="screenshots/dashboard-overview.png" width="95%">
+  <img src="Dasbor Gambar/Picture1.png" width="95%">
 </p>
 
 ### 02. Product & Sales Channel Performance
 
 <p align="center">
-  <img src="screenshots/product-channel-performance.png" width="95%">
+  <img src="Dasbor Gambar/Picture2.png" width="95%">
 </p>
 
 ### 03. Geographic & Customer Performance
 
 <p align="center">
-  <img src="screenshots/geographic-customer-performance.png" width="95%">
+  <img src="Dasbor Gambar/Picture1.png" width="95%">
 </p>
 
 > Sesuaikan nama file gambar dengan nama screenshot yang digunakan di repository GitHub Anda.
